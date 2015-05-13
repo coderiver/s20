@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="all" href="fancybox/jquery.fancybox.css" >
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 </head>
 <body>
@@ -18,7 +20,7 @@
 					<a href="#">укр</a>
 					<a href="#">рус</a>
 				</div>
-				<button class="header__menu-btn">
+				<button class="header__menu-btn js-nav-btn">
 					<span>меню</span>
 					<i class="ico ico-menu"></i>
 				</button>
@@ -26,10 +28,10 @@
 				<div class="header__contacts">
 					<a class="ico ico-skype" href="skype:USERNAME?call"></a>
 					<a class="ico ico-mail" href="mailto:USERNAME@GMAIL.COM"></a>
-					<a class="ico ico-phone" href="tel:NUMBER"></a>
+					<a class="ico ico-phone" href="tel:0442295252"></a>
 				</div>
 			</div>
-			<div class="header__menu">
+			<div class="header__menu js-nav">
 				<ul>
 					<li><a href="#">Главная</a></li>
 					<li class="is-active"><a href="#">Преимущества</a></li>
@@ -53,16 +55,18 @@
 		<div class="center">
 			<!-- share -->
 			<div class="share">
-				<button class="share__btn">
+				<button class="share__btn js-share-btn">
 					<i class="ico ico-like"></i>
 				</button>
-				<div class="share__in">
-					<a class="ico ico-fb" href="#"></a>
-					<a class="ico ico-vk" href="#"></a>
+				<div class="share__in js-share">
+					<a class="ico ico-fb" href="https://www.facebook.com/solomenskaya20a"></a>
+					<a class="ico ico-vk" href="https://vk.com/solomenskaya20a"></a>
 					<a class="ico ico-ig" href="#"></a>
 				</div>
 			</div>
-			<div class="main__logo"></div>
+			<div class="main__logo">
+				<img src="img/logo-big.png" alt="">
+			</div>
 		</div>
 		<div class="main__foot">
 			<!-- center -->
@@ -85,37 +89,37 @@
 			<!-- h -->
 			<div class="h h_white">ПРЕИМУЩЕСТВА</div>
 			<div class="benefits__list">
-				<a class="benefits__item" href="#">
+				<a class="benefits__item js-benefits-link" href="#">
 					<div class="benefits__ico">
 						<i class="ico ico-benefit-1"></i>
 					</div>
 					<div class="benefits__title">Лучшее соотношения<br>цены и качества</div>
 				</a>
-				<a class="benefits__item" href="#">
+				<a class="benefits__item js-benefits-link" href="#">
 					<div class="benefits__ico">
 						<i class="ico ico-benefit-2"></i>
 					</div>
 					<div class="benefits__title">Соломенским парк<br>через дорогу</div>
 				</a>
-				<a class="benefits__item" href="#">
+				<a class="benefits__item js-benefits-link" href="#">
 					<div class="benefits__ico">
 						<i class="ico ico-benefit-3"></i>
 					</div>
 					<div class="benefits__title">Самое лучшее<br>место расположения</div>
 				</a>
-				<a class="benefits__item" href="#">
+				<a class="benefits__item js-benefits-link" href="#">
 					<div class="benefits__ico">
 						<i class="ico ico-benefit-4"></i>
 					</div>
 					<div class="benefits__title">Комфорт у удобство<br>вашего проживания.</div>
 				</a>
-				<a class="benefits__item" href="#">
+				<a class="benefits__item js-benefits-link" href="#">
 					<div class="benefits__ico">
 						<i class="ico ico-benefit-5"></i>
 					</div>
 					<div class="benefits__title">Умные планировки</div>
 				</a>
-				<a class="benefits__item" href="#">
+				<a class="benefits__item js-benefits-link" href="#">
 					<div class="benefits__ico">
 						<i class="ico ico-benefit-6"></i>
 					</div>
@@ -123,86 +127,555 @@
 				</a>
 			</div>
 		</div>
-		<div class="benefits__popup">
+		<div class="benefits__popup js-benefits-popup">
 			<div class="benefits__desc">
 				<!-- 1 -->
-				<div class="benefits__el">
+				<div class="benefits__el js-benefits-el">
 					<div class="benefits__ico">
 						<i class="ico ico-benefit-1"></i>
 					</div>
 					<div class="benefits__in">
 						<div class="benefits__head">
-							<button class="close"><i class="ico ico-close"></i></button>
+							<button class="close js-benefits-close"><i class="ico ico-close"></i></button>
 							<div class="benefits__title">Лучшее соотношение цены<br>и качества</div>
 						</div>
 						<div class="benefits__text">В новом доме по ул. Соломенской, 20А – лучшее соотношение цены и качества в сегменте бизнес класса. Мы строим для себя. Комфорт жильцов дома – наш основной приоритет. Экологически чистые материалы, современные технологии строительства и конечно же – сервис, забота о клиенте. В отделе продаж действует рассрочка 0% на год, при 100% оплате – скидки, которые вас порадуют.</div>
 					</div>
 				</div>
 				<!-- 2 -->
-				<div class="benefits__el">
+				<div class="benefits__el js-benefits-el">
 					<div class="benefits__ico">
 						<i class="ico ico-benefit-2"></i>
 					</div>
 					<div class="benefits__in">
 						<div class="benefits__head">
-							<button class="close"><i class="ico ico-close"></i></button>
+							<button class="close js-benefits-close"><i class="ico ico-close"></i></button>
 							<div class="benefits__title">Соломенский парк через дорогу</div>
 						</div>
 						<div class="benefits__text">В наше время — время экологической неблагополучности, постоянного шума и городской суеты, практически каждому необходимо вернувшись домой вдохнуть свежего воздуха и «послушать» тишину, пение птиц по утрам… И смотреть из своего окна не в спальню соседа, а на зелень, радующую глаз. Жилой комплекс на  «Соломеской, 20А» расположился в уютном, спокойном и тихом районе нашего города обладает всеми этими достоинствами в полной мере!</div>
 					</div>
 				</div>
 				<!-- 3 -->
-				<div class="benefits__el">
+				<div class="benefits__el js-benefits-el">
 					<div class="benefits__ico">
 						<i class="ico ico-benefit-3"></i>
 					</div>
 					<div class="benefits__in">
 						<div class="benefits__head">
-							<button class="close"><i class="ico ico-close"></i></button>
+							<button class="close js-benefits-close"><i class="ico ico-close"></i></button>
 							<div class="benefits__title">Самое лучшее место расположения</div>
 						</div>
 						<div class="benefits__text">Бессарабка – 12 мин  4,8 км. ЖД Вокзал –  13 мин, 4,8 км Аэропорт Жуляны 17 мин, 4,5 км.<br>С одной стороны новостроев на Соломенской, 20А – Севастопольская площадь, с другой – Соломенская площадь.<br>В пешеходной доступности в 10-ти минутах 3 детских сада, две школы, магазины, фитнес центры, рестораны, и самое главное – большой Соломенский ландшафтный парк – прекрасное место для прогулок.</div>
 					</div>
 				</div>
 				<!-- 4 -->
-				<div class="benefits__el">
+				<div class="benefits__el js-benefits-el">
 					<div class="benefits__ico">
 						<i class="ico ico-benefit-4"></i>
 					</div>
 					<div class="benefits__in">
 						<div class="benefits__head">
-							<button class="close"><i class="ico ico-close"></i></button>
+							<button class="close js-benefits-close"><i class="ico ico-close"></i></button>
 							<div class="benefits__title">Комфорт и удобство вашего проживания</div>
 						</div>
 						<div class="benefits__text">В домах по адресу Соломенская, 20А все продумано до деталей, чтоб не выходя из комплекса вы могли себя чувствовать комфортно. Это и вежливые консьержи, собственный сервисный ЖЕК «Виктори», отапливаемый подземный паркинг, магазин в доме, детская студия творчества, семейное кафе-кондитерская всегда с горячим хлебом и свежими выпечками, салон красоты, wi-fi в зоне отдыха на открытой территории комплекса.</div>
 					</div>
 				</div>
 				<!-- 5 -->
-				<div class="benefits__el">
+				<div class="benefits__el js-benefits-el">
 					<div class="benefits__ico">
 						<i class="ico ico-benefit-5"></i>
 					</div>
 					<div class="benefits__in">
 						<div class="benefits__head">
-							<button class="close"><i class="ico ico-close"></i></button>
+							<button class="close js-benefits-close"><i class="ico ico-close"></i></button>
 							<div class="benefits__title">Умные планировки</div>
 						</div>
 						<div class="benefits__text">Квартиры в Жилом комплексе «Соломенский, 20А» предлагаются в эксклюзивных вариантах, а именно с так называемыми УМНЫМИ ПЛАНИРОВКАМИ квартир. Каждый может с легкостью увеличить количество комнат за счет небольшой перепланировки и переделать однокомнатную в двухкомнатную квартиру, а из «двушки» сделать трехкомнатную. Также возможно объединение двух квартир с минимальными затратами и без ущерба для комфорта и уюта своего жилья.</div>
 					</div>
 				</div>
 				<!-- 6 -->
-				<div class="benefits__el">
+				<div class="benefits__el js-benefits-el">
 					<div class="benefits__ico">
 						<i class="ico ico-benefit-6"></i>
 					</div>
 					<div class="benefits__in">
 						<div class="benefits__head">
-							<button class="close"><i class="ico ico-close"></i></button>
+							<button class="close js-benefits-close"><i class="ico ico-close"></i></button>
 							<div class="benefits__title">Закрытая территория с персональным доступом</div>
 						</div>
 						<div class="benefits__text">Обеспечение безопасности на сегодняшний день является чуть ли не первостепенной проблемой современного общества. Поэтому территорию Жилого комплекса «Соломенский, 20А» планируется огородить с обеспечением электронного ДОСТУПА ТОЛЬКО ДЛЯ ЖИЛЬЦОВ. Таким образом прогулки детей, сохранность личного автотранспорта, общедомового имущества, тишина и покой жильцов от лиц, нарушающих общественный порядок будет обеспечена должным образом.</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+	<!-- about -->
+	<div class="about">
+		<div class="about__item about__item_1">
+			<div class="about__bg"></div>
+			<!-- center -->
+			<div class="center">
+				<div class="about__in">
+					<!-- h -->
+					<div class="h h_2 h_left">Жилой комплекс</div>
+					<div class="h h_left">Соломенская,20А</div>
+					<div class="about__text">
+						<p>Жилой комплекс по ул.  Соломенская,20А расположен в самом зеленом районе столицы - Соломеснком. Близость всей необходимой для комфортного проживания инфраструктуры - рядом детские сады, школы, центральная районная поликлиника, рынок, супермаркет, отделения банков, кафе и рестораны, является одним из важнейших преимуществ нашего жилого комплекса. Удобная транспортная развязка - в шаговой доступности от комплекса  остановки городского транспорта, до метро маршрутное такси доставит в течении 10 минут, а владельцы автомобилей по праву оценят возможность добраться до центра города в течении 10-15 минут. Напротив комплекса расположен один из самых больших парков Киева - Соломенский лесопарк, здесь можно как насладится нетронутой природы городской рощи, так и провести время за семейной прогулкой на велосипедах. Еще один парк, расстояние до которого можно измерить 20 минутами шагом - парк им. Островского, где благоустроена большая детская площадка, детские аттракционы и зоны отдыха для взрослых.</p>
+						<p>Соломеснкая, 20А - это уникальный комплекс, построенный с применением всех современных технологий. Территория комплекса ограждена и, кроме двух жилых домов, включает в себя детские площадки, территории для отдыха взрослых, гостевую автостоянку. На первых этажах расположены коммерческие помещения - отделение банка, аптека, фитнесс-клуб, продовольственный магазин, кафе-кондитерская, студия детского творчества. Территория охраняема и налажена система видеонаблюдения.</p>
+						<p><a class="js-about-link" href="#">Читать дальше</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about__item about__item_2 js-about-more">
+			<div class="about__bg"></div>
+			<!-- center -->
+			<div class="center">
+				<div class="about__line"><i class="ico ico-about-line"></i></div>
+				<div class="about__in">
+					<div class="about__text">
+						<p>Дома построены по монолитно-каркасной технологии с кирпичным заполнением фасадных стен. Фасад комбинированный - с применением облицовочного кирпича и декоративной штукатурки. На первом этаже просторный холл со стильной отделкой в стиле ЛОФТ, что подразумевает применение натуральных и качественных материалов, где вместо обычной комнатки будет предусмотрен ресепш для службы консьержа, помещения для колясок и велосипедов. Отделка зон общего пользования на этажах так же выполнена в стиле ЛОФТ. До нужного этажа жильцов будут доставлять стильные скоростные лифты фирмы OTIS. Благодаря разнообразному выбору планировок, каждый сможет найти для себя в наших домах на Соломенской, 20А свою квартиру. А благодаря увеличенным оконным проемам и витражному остеклению на балконах, жильцы смогут сполна насладится прекрасным видом на высоких этажах и уютом собственного двора на этажах пониже. Для удобства жильцов счетчики на тепло, электричество и водоснабжение будут установлены в зонах общего пользования - за пределами квартиры.</p>
+						<p>Если вы решили купить квартиру в Соломенском районе , то покупка квартиры в наших домах на  ул. Соломеснкой, 20 А - это и своевременное приобретение собственного жилья, и выгодная инвестиция на этапе строительства. В работе над предыдущими объектами компания Контакт-Инвест показала себя как надежный застройщик и партнер. Для удобства планирования бюджета квартиры в продаже предлагаются как со 100% оплатой, так и с рассрочкой платежа до окончания строительства. При 100% оплате мы предоставляем нашим клиентам возможность получить выгодную скидку, а при оплате частичной - полная стоимость квартиры остается неизменной и фиксируется в национальной валюте.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- gallery -->
+	<div class="gallery gallery_mb0">
+		<!-- center -->
+		<div class="center">
+			<!-- h -->
+			<div class="h">Визуализация</div>
+		</div>
+		<div class="gallery__list">
+			<div class="gallery__item">
+				<a class="fancybox" href="img/01_visualization/visualization_01_900x577px.jpg" rel="visualization">
+					<img src="img/01_visualization/visualization_01_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/01_visualization/visualization_02_900x577px.jpg" rel="visualization">
+					<img src="img/01_visualization/visualization_02_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/01_visualization/visualization_03_900x577px.jpg" rel="visualization">
+					<img src="img/01_visualization/visualization_03_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/01_visualization/visualization_04_900x577px.jpg" rel="visualization">
+					<img src="img/01_visualization/visualization_04_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/01_visualization/visualization_01_900x577px.jpg" rel="visualization">
+					<img src="img/01_visualization/visualization_01_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/01_visualization/visualization_02_900x577px.jpg" rel="visualization">
+					<img src="img/01_visualization/visualization_02_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/01_visualization/visualization_03_900x577px.jpg" rel="visualization">
+					<img src="img/01_visualization/visualization_03_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/01_visualization/visualization_04_900x577px.jpg" rel="visualization">
+					<img src="img/01_visualization/visualization_04_900x577px.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- plan -->
+	<div class="plan">
+		<!-- center -->
+		<div class="center">
+			<!-- h -->
+			<div class="h h_white">ПЛАН ЭТАЖА</div>
+			<div class="plan__nav">
+				<a class="plan__nav-item" href="#">
+					<div class="plan__nav-pic">
+						<img src="img/plan-1.jpg" alt="">
+					</div>
+					<div class="plan__nav-type">Первая очередь</div>
+				</a>
+				<a class="plan__nav-item" href="#">
+					<div class="plan__nav-pic">
+						<img src="img/plan-2.jpg" alt="">
+					</div>
+					<div class="plan__nav-type">Вторая очередь</div>
+				</a>
+			</div>
+			<div class="plan__in">
+				<div class="plan__pic">
+					<img src="img/plan.png" alt="">
+					<a class="plan__item plan__item_1" href="room-65-74.html">
+						<img src="img/plan1-1.png" alt="">
+						<div class="plan__size"><span>1</span>40.45</div>
+					</a>
+					<a class="plan__item plan__item_2" href="room-65-74.html">
+						<img src="img/plan1-2.png" alt="">
+						<div class="plan__size"><span>1</span>48.79</div>
+					</a>
+					<a class="plan__item plan__item_3" href="room-65-74.html">
+						<img src="img/plan1-3.png" alt="">
+						<div class="plan__size"><span>1</span>48.79</div>
+					</a>
+					<a class="plan__item plan__item_4" href="room-65-74.html">
+						<img src="img/plan1-4.png" alt="">
+						<div class="plan__size"><span>1</span>66.53</div>
+					</a>
+					<a class="plan__item plan__item_5" href="room-65-74.html">
+						<img src="img/plan1-5.png" alt="">
+						<div class="plan__size"><span>1</span>65.74</div>
+					</a>
+					<a class="plan__item plan__item_6" href="room-65-74.html">
+						<img src="img/plan1-6.png" alt="">
+						<div class="plan__size"><span>1</span>43.35</div>
+					</a>
+				</div>
+				<!-- link-download -->
+				<a class="link-download" href="#"><span>СКАЧАТЬ в PDF<i class="ico ico-pdf"></i></span></a>
+			</div>
+		</div>
+	</div>
+	<!-- gallery -->
+	<div class="gallery">
+		<!-- center -->
+		<div class="center">
+			<!-- h -->
+			<div class="h">На территории комплекса</div>
+		</div>
+		<div class="gallery__list">
+			<div class="gallery__item">
+				<a class="fancybox" href="img/02_territory/territory_17_900x577px.jpg" rel="territory" title="Соломенский лесопарк – прилегает к Соломенской улице">
+					<div class="gallery__type">Магазин</div>
+					<img src="img/02_territory/territory_17_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/02_territory/territory_16_900x577px.jpg" rel="territory" title="Соломенский лесопарк – прилегает к Соломенской улице">
+					<div class="gallery__type">Холл</div>
+					<img src="img/02_territory/territory_16_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/02_territory/territory_15_900x577px.jpg" rel="territory" title="Соломенский лесопарк – прилегает к Соломенской улице">
+					<div class="gallery__type">Салон красоты</div>
+					<img src="img/02_territory/territory_15_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/02_territory/territory_14_900x577px.jpg" rel="territory" title="Соломенский лесопарк – прилегает к Соломенской улице">
+					<div class="gallery__type">Салон красоты</div>
+					<img src="img/02_territory/territory_14_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/02_territory/territory_13_900x577px.jpg" rel="territory" title="Соломенский лесопарк – прилегает к Соломенской улице">
+					<div class="gallery__type">Фитнес зал</div>
+					<img src="img/02_territory/territory_13_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/02_territory/territory_12_900x577px.jpg" rel="territory" title="Соломенский лесопарк – прилегает к Соломенской улице">
+					<div class="gallery__type">Пекарня</div>
+					<img src="img/02_territory/territory_12_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/02_territory/territory_11_900x577px.jpg" rel="territory" title="Соломенский лесопарк – прилегает к Соломенской улице">
+					<div class="gallery__type">Семейное кафе</div>
+					<img src="img/02_territory/territory_11_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/02_territory/territory_10_900x577px.jpg" rel="territory" title="Соломенский лесопарк – прилегает к Соломенской улице">
+					<div class="gallery__type">Подземный паркинг</div>
+					<img src="img/02_territory/territory_10_900x577px.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- str -->
+	<div class="str">
+		<!-- center -->
+		<div class="center">
+			<!-- h -->
+			<div class="h">Инфраструктура</div>
+			<div class="str__in">
+				<a class="fancybox" rel="str" href="img/03_infrastructure/ДС№625_900x577px.jpg" style="top: 27.5%; left: 6.4%;"></a>
+				<a class="fancybox" rel="str" href="img/03_infrastructure/ДС№625_900x577px.jpg" style="top: 16.7%; left: 17.2%;"></a>
+				<a class="fancybox" rel="str" href="img/03_infrastructure/evroleb_01_900x577px.jpg" style="top: 1%; left: 41.7%;"></a>
+				<a class="fancybox" rel="str" href="img/03_infrastructure/FitCurves_900x577px.jpg" style="top: 23.5%; left: 40.3%;"></a>
+				<a class="fancybox" rel="str" href="img/03_infrastructure/BILLA_900x577px.jpg" style="top: 32.5%; left: 40.3%;"></a>
+				<a class="fancybox" rel="str" href="img/03_infrastructure/ДС№625_900x577px.jpg" style="top: 42.7%; left: 36.8%;"></a>
+				<a class="fancybox" rel="str" href="img/03_infrastructure/park_900x577px.jpg" style="top: 19.0%; left: 60.2%;"></a>
+				<a class="fancybox" rel="str" href="img/03_infrastructure/ДС№625_900x577px.jpg" style="top: 83.5%; left: 49.6%;"></a>
+				<a class="fancybox" rel="str" href="img/03_infrastructure/Почта_900x577px.jpg" style="top: 64.4%; left: 67.2%;"></a>
+				<a class="fancybox" rel="str" href="img/03_infrastructure/Поликлинника_900x577px.jpg" style="top: 55.5%; left: 78.3%;"></a>
+				<a class="fancybox" rel="str" href="img/03_infrastructure/рынок_900x577px.jpg" style="top: 80.7%; left: 83.1%;"></a>
+				<img src="img/str.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- gallery -->
+	<div class="gallery gallery_mb0">
+		<!-- center -->
+		<div class="center">
+			<!-- h -->
+			<div class="h">Интерьер</div>
+		</div>
+		<div class="gallery__list">
+			<div class="gallery__item">
+				<a class="fancybox" href="img/04_interior/interior_01_900x577px.jpg" rel="interior">
+					<img src="img/04_interior/interior_01_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/04_interior/interior_02_900x577px.jpg" rel="interior">
+					<img src="img/04_interior/interior_02_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/04_interior/interior_02_900x577px.jpg" rel="interior">
+					<img src="img/04_interior/interior_02_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/04_interior/interior_04_900x577px.jpg" rel="interior">
+					<img src="img/04_interior/interior_04_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/04_interior/interior_05_900x577px.jpg" rel="interior">
+					<img src="img/04_interior/interior_05_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/04_interior/interior_06_900x577px.jpg" rel="interior">
+					<img src="img/04_interior/interior_06_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/04_interior/interior_07_900x577px.jpg" rel="interior">
+					<img src="img/04_interior/interior_07_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/04_interior/interior_08_900x577px.jpg" rel="interior">
+					<img src="img/04_interior/interior_08_900x577px.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- progress -->
+	<div class="progress">
+		<!-- center -->
+		<div class="center">
+			<!-- h -->
+			<div class="h h_white">ход строительства</div>
+			<div class="progress__in">
+				<div class="progress__sl js-sl">
+					<div class="progress__item js-sl-item">
+						<div class="progress__pic">
+							<img src="img/05_building/январь/январь_01_900x577px.jpg" alt="">
+							<div class="progress__desc"><span>23.05.2015</span>Построен второй этаж второй этаж второй этаж второй этаж</div>
+						</div>
+					</div>
+					<div class="progress__item js-sl-item">
+						<div class="progress__pic">
+							<img src="img/05_building/январь/январь_02_900x577px.jpg" alt="">
+							<div class="progress__desc"><span>23.05.2015</span>Построен второй этаж второй этаж второй этаж второй этаж</div>
+						</div>
+					</div>
+					<div class="progress__item js-sl-item">
+						<div class="progress__pic">
+							<img src="img/05_building/январь/январь_03_900x577px.jpg" alt="">
+							<div class="progress__desc"><span>23.05.2015</span>Построен второй этаж второй этаж второй этаж второй этаж</div>
+						</div>
+					</div>
+					<div class="progress__item js-sl-item">
+						<div class="progress__pic">
+							<img src="img/05_building/февраль/февраль_900x577px.jpg" alt="">
+							<div class="progress__desc"><span>23.05.2015</span>Построен второй этаж второй этаж второй этаж второй этаж</div>
+						</div>
+					</div>
+					<div class="progress__item js-sl-item">
+						<div class="progress__pic">
+							<img src="img/05_building/март/март_01_900x577px.jpg" alt="">
+							<div class="progress__desc"><span>23.05.2015</span>Построен второй этаж второй этаж второй этаж второй этаж</div>
+						</div>
+					</div>
+					<div class="progress__item js-sl-item">
+						<div class="progress__pic">
+							<img src="img/05_building/март/март_02_900x577px.jpg" alt="">
+							<div class="progress__desc"><span>23.05.2015</span>Построен второй этаж второй этаж второй этаж второй этаж</div>
+						</div>
+					</div>
+					<div class="progress__item js-sl-item">
+						<div class="progress__pic">
+							<img src="img/05_building/март/март_03_900x577px.jpg" alt="">
+							<div class="progress__desc"><span>23.05.2015</span>Построен второй этаж второй этаж второй этаж второй этаж</div>
+						</div>
+					</div>
+					<div class="progress__item js-sl-item">
+						<div class="progress__pic">
+							<img src="img/05_building/апрель/апрель_900x577px.jpg" alt="">
+							<div class="progress__desc"><span>23.05.2015</span>Построен второй этаж второй этаж второй этаж второй этаж</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- h -->
+			<div class="h h_3"><a href="#">Онлайн камера</a></div>
+		</div>
+	</div>
+	<!-- gallery -->
+	<div class="gallery gallery_mb0">
+		<!-- center -->
+		<div class="center">
+			<!-- h -->
+			<div class="h">ГАЛЕРЕЯ</div>
+		</div>
+		<div class="gallery__list">
+			<div class="gallery__item">
+				<a class="fancybox" href="img/06_gallery/gallery_01_900x577px.jpg" rel="gallery">
+					<img src="img/06_gallery/gallery_01_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/06_gallery/gallery_02_900x577px.jpg" rel="gallery">
+					<img src="img/06_gallery/gallery_02_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/06_gallery/gallery_03_900x577px.jpg" rel="gallery">
+					<img src="img/06_gallery/gallery_03_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/06_gallery/gallery_04_900x577px.jpg" rel="gallery">
+					<img src="img/06_gallery/gallery_04_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/06_gallery/gallery_05_900x577px.jpg" rel="gallery">
+					<img src="img/06_gallery/gallery_05_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/06_gallery/gallery_06_900x577px.jpg" rel="gallery">
+					<img src="img/06_gallery/gallery_06_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/06_gallery/gallery_07_900x577px.jpg" rel="gallery">
+					<img src="img/06_gallery/gallery_07_900x577px.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery__item">
+				<a class="fancybox" href="img/06_gallery/gallery_08_900x577px.jpg" rel="gallery">
+					<img src="img/06_gallery/gallery_08_900x577px.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- contacts -->
+	<div class="contacts">
+		<!-- center -->
+		<div class="center">
+			<!-- h -->
+			<div class="h h_white">Наши контакты</div>
+			<div class="contacts__list">
+				<div class="contacts__item">
+					<div class="contacts__ava">
+						<img src="img/builder-1.jpg" alt="">
+					</div>
+					<div class="contacts__in">	
+						<p>Анна Яремко</p>
+						<p>Менеджер отдела продаж</p>
+						<br>
+						<p>+38 (063) 611 82 82</p>
+						<p>+38 (066) 252 11 17</p>
+						<p>+38 (044) 221 02 02</p>
+						<br>
+						<p>a.yaremko@s20.com.ua</p>
+					</div>
+				</div>
+				<div class="contacts__item">
+					<div class="contacts__ava">
+						<img src="img/builder-2.jpg" alt="">
+					</div>
+					<div class="contacts__in">	
+						<p>Нинель Юношева</p>
+						<p>Руководитель отдела продаж</p>
+						<br>
+						<p>+38 (050) 711 77 75</p>
+						<p>+38 (044) 221 02 02</p>
+						<br>
+						<br>
+						<p>n.yunosheva@s20a.com.ua</p>
+					</div>
+				</div>
+				<div class="contacts__item">
+					<div class="contacts__ava">
+						<img src="img/builder-3.jpg" alt="">
+					</div>
+					<div class="contacts__in">	
+						<p>Евгений Чернецкий. </p>
+						<p>Директор</p>
+						<br>
+						<p>chernetsky@s20a.com.ua </p>
+						<p>www.contact-invest.com.ua</p>
+					</div>
+				</div>
+				<div class="contacts__item">
+					<div class="contacts__ava">
+						<img src="img/builder-4.jpg" alt="">
+					</div>
+					<div class="contacts__in">	
+						<p>Сергей Засепский</p>
+						<p>Главный инженер проекта</p>
+						<br>
+						<p>m.zasepskiy@s20a.com.ua</p>
+					</div>
+				</div>
+				<div class="contacts__item">
+					<div class="contacts__ava">
+						<img src="img/builder-5.jpg" alt="">
+					</div>
+					<div class="contacts__in">	
+						<p>Роман Тытыкало</p>
+						<p>Главный юрист</p>
+						<br>
+						<p>r.titikalo@s20a.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- builders -->
+	<div class="builders">
+		<!-- center -->
+		<div class="center">
+			<!-- h -->
+			<div class="h">Для вас строят</div>
+			<div class="builders__in">
+				<div class="builders__logo">
+					<img src="img/logo-contact-invest.png" alt="">
+				</div>
+				<ul class="builders__list">
+					<li><img src="img/logo-concept-group.png" alt=""></li>
+					<li><img src="img/logo-real-estate.png" alt=""></li>
+					<li><img src="img/logo-yo-dezeen.png" alt=""></li>
+				</ul>
 			</div>
 		</div>
 	</div>
