@@ -801,13 +801,16 @@ textarea
 
 .room
 	padding: 35px 0 70px
+	+r(1020)
+		padding: 35px 0
 	.room__meters
 		margin-bottom: 30px
 		text-align: center
 		span
 			display: inline-block
 			padding: 3px 25px
-			background: $viol 
+			background: $viol
+			font-family: "Century Gothic", "PF Dib Text Condensed Pro Light", Arial, sans-serif 
 			font-size: 30px
 			color: #FFF
 	.room__pic
@@ -879,21 +882,49 @@ textarea
 	.room__l
 		margin-bottom: 80px
 		+clr
-	.room__column	
-		float: left
-		width: 50%
-		padding: 0 30px
+		+r(1020)
+			margin-bottom: 60px
 		+r(760)
+			margin-bottom: 40px
+	.room__l_wide
+		.room__column
+			position: relative
 			width: 100%
 			padding: 0
 			&:first-child
+				width: 44%
+				margin-bottom: -230px
+				padding: 0
+				z-index: 2 
+				+r(1020)
+					width: 100%
+					margin: 0 0 30px
+	.room__column	
+		float: left
+		width: 45%
+		padding: 0 30px
+		+r(1020)
+			padding: 0 20px
+		&:first-child
+			width: 55%
+			+r(1020)
+				padding: 0 20px 0 0
+			+r(760)
+				width: 100%
 				margin-bottom: 30px
+				padding: 0
+		+r(1020)
+			padding: 0 0 0 20px
+		+r(760)
+			width: 100%
+			padding: 0
 	.room__info
 		color: #3B3B3B 
 		+clr
 		ul
 			float: left
 			width: 33.33%
+			padding: 0 5px
 			text-align: center
 			font-size: 12px
 			text-transform: uppercase
@@ -906,8 +937,10 @@ textarea
 			font-family: "Century Gothic", "PF Dib Text Condensed Pro Light", Arial, sans-serif
 			font-size: 30px
 	.room__download
-		padding-top: 40px
+		padding: 40px 30px 0 0
 		text-align: right
+		+r(760)
+			padding: 20px 0 0 0
 
 .btn-big
 	display: block
@@ -920,6 +953,7 @@ textarea
 	text-align: center
 
 .form
+	display: none
 	width: 300px
 	padding: 30px
 
