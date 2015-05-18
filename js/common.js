@@ -2,9 +2,13 @@ head.ready(function() {
 
 	// nav
 	(function () {
+		var nav = $('.js-nav');
 		$('.js-nav-btn').on('click', function () {
-			$('.js-nav').slideToggle();
+			nav.slideToggle();
 			return false;
+		});
+		nav.find('a').on('click', function () {
+			nav.slideUp();
 		});
 	}());
 

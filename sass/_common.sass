@@ -113,6 +113,12 @@ textarea
 	+r(470)
 		padding: 10px
 		font-size: 14px
+		
+.anchor
+	position: absolute
+	top: -75px
+	+r(760)
+		top: 0
 
 .l
 	+clr
@@ -369,6 +375,7 @@ textarea
 		left: 0
 		right: 0
 		bottom: 0
+		padding: 10px
 		background: rgba(#000,.5)
 		+vertical
 		z-index: 4
@@ -379,6 +386,9 @@ textarea
 		background: #E8EDF6
 		border-radius: 6px
 		vertical-align: middle
+		+r(760)
+			width: 100%
+			padding: 20px
 	.benefits__el	
 		display: table
 		width: 100%
@@ -391,6 +401,8 @@ textarea
 			padding-right: 20px
 			float: none
 			margin: 0
+			+r(760)
+				display: none
 	.benefits__in
 		overflow: hidden  
 	.benefits__head
@@ -439,6 +451,7 @@ textarea
 		text-align: left
 
 .about
+	position: relative
 	padding-bottom: 20px
 	overflow: hidden
 	.about__in
@@ -501,6 +514,7 @@ textarea
 		z-index: 4
 
 .plan
+	position: relative
 	margin-bottom: 40px
 	padding: 40px 0
 	background-color: #D3C4A3
@@ -642,6 +656,7 @@ textarea
 		vertical-align: bottom
 
 .gallery
+	position: relative
 	margin-bottom: 40px
 	&.gallery_mb0
 		margin-bottom: 0
@@ -671,6 +686,7 @@ textarea
 		text-transform: uppercase 
 
 .str
+	position: relative
 	margin-bottom: 40px
 	.str__in
 		position: relative
@@ -683,6 +699,7 @@ textarea
 			height: 8.8%
 
 .progress
+	position: relative
 	margin-bottom: 40px
 	padding: 40px 0 20px
 	background-color: #D3C4A3
@@ -729,6 +746,7 @@ textarea
 			right: 0
 
 .contacts
+	position: relative
 	padding: 65px 0 55px
 	background: #565F63
 	+r(760)
@@ -774,6 +792,7 @@ textarea
 				font-size: 18px 
 
 .builders
+	position: relative
 	padding: 40px 0
 	background: url(../img/bg-builders.jpg) no-repeat 50% 50%
 	background-size: cover  
