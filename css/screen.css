@@ -103,6 +103,7 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 @media only screen and (max-width: 760px) { .wrapper { padding-top: 0; } }
 
 .center { max-width: 1100px; margin: 0 auto; padding: 0 50px; }
+.center.center_small { max-width: 1000px; }
 @media only screen and (max-width: 1020px) { .center { padding: 0 20px; } }
 @media only screen and (max-width: 760px) { .center { padding: 0 10px; } }
 
@@ -196,17 +197,17 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 .h.h_left { text-align: left; }
 
 .about { position: relative; padding-bottom: 20px; overflow: hidden; }
-.about .about__in { padding-left: 50%; }
-@media only screen and (max-width: 760px) { .about .about__in { padding: 0; } }
 .about .about__item { position: relative; }
 .about .about__item_1 { padding: 75px 0 30px; }
 @media only screen and (max-width: 760px) { .about .about__item_1 { padding: 30px 0; } }
-.about .about__item_1 .about__bg { top: 30px; background: url(../img/bg-about-1.jpg) no-repeat 0 0; }
 .about .about__item_2 { display: none; padding-bottom: 90px; }
 @media only screen and (max-width: 760px) { .about .about__item_2 { padding-bottom: 40px; } }
-.about .about__item_2 .about__bg { top: 10px; background: url(../img/bg-about-2.jpg) no-repeat 0 0; }
-.about .about__bg { position: absolute; left: 50%; width: 740px; height: 560px; margin-left: -665px; z-index: 2; }
-@media only screen and (max-width: 760px) { .about .about__bg { opacity: 0.2; } }
+.about .about__l { *zoom: 1; }
+.about .about__l:after { content: " "; display: table; clear: both; }
+.about .about__col { overflow: hidden; }
+.about .about__col:first-child { float: left; margin-right: 30px; }
+@media only screen and (max-width: 760px) { .about .about__col:first-child { float: none; margin: 0 0 30px; } }
+.about .about__pic img { display: block; max-width: 100%; }
 .about .about__text { text-align: justify; letter-spacing: 1px; }
 .about .about__text p { margin-bottom: 15px; }
 .about .about__text a { color: black; }

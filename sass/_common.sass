@@ -136,6 +136,8 @@ textarea
 	max-width: 1100px
 	margin: 0 auto
 	padding: 0 50px
+	&.center_small
+		max-width: 1000px
 	+r(1020)
 		padding: 0 20px
 	+r(760)
@@ -454,36 +456,31 @@ textarea
 	position: relative
 	padding-bottom: 20px
 	overflow: hidden
-	.about__in
-		padding-left: 50%
-		+r(760)
-			padding: 0
 	.about__item
 		position: relative
 	.about__item_1
 		padding: 75px 0 30px
 		+r(760)
 			padding: 30px 0
-		.about__bg
-			top: 30px
-			background: url(../img/bg-about-1.jpg) no-repeat 0 0
 	.about__item_2
 		display: none
 		padding-bottom: 90px
 		+r(760)
 			padding-bottom: 40px
-		.about__bg
-			top: 10px
-			background: url(../img/bg-about-2.jpg) no-repeat 0 0 
-	.about__bg
-		position: absolute
-		left: 50%
-		width: 740px
-		height: 560px
-		margin-left: -665px
-		z-index: 2 
-		+r(760)
-			opacity: .2 
+	.about__l
+		+clr
+	.about__col
+		overflow: hidden
+		&:first-child
+			float: left
+			margin-right: 30px
+			+r(760)
+				float: none
+				margin: 0 0 30px
+	.about__pic
+		img
+			display: block
+			max-width: 100%
 	.about__text
 		text-align: justify
 		letter-spacing: 1px
