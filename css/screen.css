@@ -302,6 +302,7 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 .contacts .contacts__ava img { max-width: 100%; }
 .contacts .contacts__in { display: table; padding: 0 10px 0 18px; font-size: 14px; color: white; }
 .contacts .contacts__in p:first-child { font-size: 18px; }
+.contacts .contacts__in a { text-decoration: none; color: white; }
 
 .builders { position: relative; padding: 40px 0; background: url(../img/bg-builders.jpg) no-repeat 50% 50%; background-size: cover; }
 .builders .builders__in { text-align: center; font-size: 0; }
@@ -361,6 +362,7 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 .btn-big { display: block; padding: 24px; background: #e32121; font-size: 20px; text-transform: uppercase; color: white; text-decoration: none; text-align: center; }
 
 .form { display: none; width: 300px; padding: 30px; }
+.form .form__result { display: none; }
 
 .field { margin-bottom: 10px; }
 

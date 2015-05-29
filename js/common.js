@@ -111,4 +111,34 @@ head.ready(function() {
 		};
 	}());
 
+	// ajax form
+	(function () {
+		var inner = $('.js-form-in'),
+			result = $('.js-form-result');
+
+		$.validate({
+			onSuccess : function() {
+				post_data = {
+				    'user_name': $('input[name=user_name]').val(), 
+				    'user_phone': $('input[name=user_phone]').val()
+				};
+				
+				//Ajax post data to server
+				$.post('send.php', post_data, function(response){  
+				    if (response.type == 'error'){ //load json data from server and output message     
+				        output = '<div class="error">'+response.text+'</div>';
+				    }
+				    else {
+				        output = '<div class="success">'+response.text+'</div>';
+				        //reset values in all input fields
+				        inner.slideUp();
+				        result.slideDown();
+				    }
+				}, 'json');
+				return false;
+			}
+		});
+
+	}());
+
 });

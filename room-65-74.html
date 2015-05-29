@@ -171,20 +171,23 @@
 		</div>
 	</div>
 	<!-- form -->
-	<form id="form" class="form" action="">
-		<!-- field -->
-		<div class="field">
-			<div class="field__in">
-				<input class="input" type="text" placeholder="Имя" required>
+	<form id="form" class="form">
+		<div class="form__in js-form-in">
+			<!-- field -->
+			<div class="field">
+				<div class="field__in">
+					<input class="input" type="text" name="user_name" placeholder="Имя"  data-validation="required" data-validation-error-msg="Обязательное поле">
+				</div>
 			</div>
-		</div>
-		<!-- field -->
-		<div class="field">
-			<div class="field__in">
-				<input class="input" type="text" placeholder="Телефон" required>
+			<!-- field -->
+			<div class="field">
+				<div class="field__in">
+					<input class="input" type="text" name="user_phone" placeholder="Телефон"  data-validation="required" data-validation-error-msg="Обязательное поле">
+				</div>
 			</div>
+			<button class="btn btn_big" type="submit"><span>Отправить</span></button>
 		</div>
-		<button class="btn btn_big"><span>Отправить</span></button>
+		<div class="form__result js-form-result">Спасибо! Ваше сообщение отправлено.</div>
 	</form>
 </div>
 <!-- load scripts -->
