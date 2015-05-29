@@ -1,6 +1,6 @@
 <?php
 if ($_POST) {
-        $to_email = "client@s20a.com.ua"; //Recipient email, Replace with own email here
+        $to_email = "client@s20a.com.ua, n.yunosheva@s20a.com.ua"; //Recipient email, Replace with own email here
         
         //check if its an ajax request, exit if not
         if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
