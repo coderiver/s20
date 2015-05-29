@@ -119,6 +119,7 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 @media only screen and (max-width: 760px) { .header .header__menu-btn { margin: 25px 0 0 10px; } }
 .header .header__menu-btn span { display: inline-block; margin-right: 6px; vertical-align: middle; text-transform: uppercase; font-size: 14px; color: white; }
 .header .header__phone { float: right; min-width: 150px; margin: 22px 0 0 85px; font-size: 24px; color: white; text-align: right; }
+.header .header__phone a { color: white; text-decoration: none; }
 @media only screen and (max-width: 760px) { .header .header__phone { min-width: 0; margin: 22px 0 0 5px; } }
 @media only screen and (max-width: 470px) { .header .header__phone { display: none; } }
 .header .header__contacts { float: right; margin-top: 20px; font-size: 0; }
