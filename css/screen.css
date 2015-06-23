@@ -369,6 +369,12 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 
 .input { width: 100%; height: 40px; border: 1px solid #f2e0ff; padding: 0 10px; font-size: 16px; }
 
+.content { padding: 35px 0 70px; font-size: 16px; }
+.content > * { margin-bottom: 20px; }
+.content img { max-width: 100%; }
+.content ul li:before { content: "- "; }
+.content ol li { list-style: decimal; list-style-position: inside; }
+
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
