@@ -114,7 +114,9 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 .header .header__logo { float: left; margin-top: 13px; background: url('../img/icons-sbfd79d19fb.png') 0 -1423px no-repeat; width: 55px; height: 50px; }
 .header .header__lang { float: right; margin: 19px 10px 0 20px; }
 @media only screen and (max-width: 760px) { .header .header__lang { margin: 19px 0 0 10px; } }
-.header .header__lang a { display: block; color: #b5b5b5; }
+.header .header__lang a, .header .header__lang span { display: block; }
+.header .header__lang a { color: #b5b5b5; }
+.header .header__lang span { color: white; }
 .header .header__menu-btn { float: right; margin: 25px 0 0 65px; white-space: nowrap; }
 @media only screen and (max-width: 760px) { .header .header__menu-btn { margin: 25px 0 0 10px; } }
 .header .header__menu-btn span { display: inline-block; margin-right: 6px; vertical-align: middle; text-transform: uppercase; font-size: 14px; color: white; }
@@ -140,7 +142,7 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 .main .main__text { padding: 14px 0; background: rgba(0, 0, 0, 0.25); font-size: 18px; color: white; text-align: center; }
 .main .main__price { float: left; width: 110px; height: 110px; margin-bottom: 20px; background: #e32121; border-radius: 50%; text-align: center; font-size: 0; }
 .main .main__price:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
-.main .main__price-in { display: inline-block; padding: 10px 5px 0; vertical-align: middle; font-size: 12px; color: white; }
+.main .main__price-in { display: inline-block; padding: 10px 10px 0; vertical-align: middle; font-size: 12px; color: white; }
 .main .main__price-in span { display: block; margin-bottom: 2px; }
 .main > .center { position: relative; }
 .main .btn { float: right; margin: 76px 0 20px; }
@@ -208,7 +210,7 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 .about .about__col { overflow: hidden; }
 .about .about__col:first-child { float: left; margin-right: 30px; }
 @media only screen and (max-width: 760px) { .about .about__col:first-child { float: none; margin: 0 0 30px; } }
-.about .about__pic img { display: block; max-width: 100%; }
+.about .about__pic img { display: block; max-width: 100%; height: auto; }
 .about .about__text { text-align: justify; letter-spacing: 1px; }
 .about .about__text p { margin-bottom: 15px; }
 .about .about__text a { color: black; }
@@ -261,14 +263,16 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 .link-download span { display: inline-block; font-size: 20px; color: white; vertical-align: bottom; }
 .link-download .ico { margin-top: -17px; vertical-align: bottom; }
 
-.gallery { position: relative; margin-bottom: 40px; }
-.gallery.gallery_mb0 { margin-bottom: 0; }
-.gallery .gallery__list { font-size: 0; }
-.gallery .gallery__item { position: relative; display: inline-block; width: 25%; vertical-align: top; }
-@media only screen and (max-width: 1020px) { .gallery .gallery__item { width: 50%; } }
-@media only screen and (max-width: 460px) { .gallery .gallery__item { width: 100%; } }
-.gallery .gallery__item img { max-width: 100%; }
-.gallery .gallery__type { position: absolute; top: 0; left: 0; right: 0; bottom: 0; padding: 15px 25px; background: rgba(0, 0, 0, 0.25); font-size: 24px; color: white; text-transform: uppercase; }
+.gl { position: relative; margin-bottom: 40px; }
+.gl.gl_mb0 { margin-bottom: 0; }
+
+.gallery { font-size: 0; }
+.gallery .gallery-item { position: relative; display: inline-block; width: 25%; vertical-align: top; }
+@media only screen and (max-width: 1020px) { .gallery .gallery-item { width: 50%; } }
+@media only screen and (max-width: 460px) { .gallery .gallery-item { width: 100%; } }
+.gallery .gallery-item:nth-child(n+9) { display: none; }
+.gallery .gallery-item img { max-width: 100%; height: auto; }
+.gallery .gallery-type { position: absolute; top: 0; left: 0; right: 0; bottom: 0; padding: 15px 25px; background: rgba(0, 0, 0, 0.25); font-size: 24px; color: white; text-transform: uppercase; }
 
 .str { position: relative; margin-bottom: 40px; }
 .str .str__in { position: relative; font-size: 0; }

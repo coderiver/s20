@@ -164,9 +164,12 @@ textarea
 		margin: 19px 10px 0 20px
 		+r(760)
 			margin: 19px 0 0 10px
-		a
+		a, span
 			display: block
+		a
 			color: #B5B5B5
+		span
+			color: #FFF 
 	.header__menu-btn
 		float: right
 		margin: 25px 0 0 65px
@@ -258,7 +261,7 @@ textarea
 		+vertical
 	.main__price-in
 		display: inline-block
-		padding: 10px 5px 0
+		padding: 10px 10px 0
 		vertical-align: middle
 		font-size: 12px
 		color: #FFF 
@@ -484,6 +487,7 @@ textarea
 		img
 			display: block
 			max-width: 100%
+			height: auto 
 	.about__text
 		text-align: justify
 		letter-spacing: 1px
@@ -655,14 +659,14 @@ textarea
 		margin-top: -17px
 		vertical-align: bottom
 
-.gallery
+.gl
 	position: relative
 	margin-bottom: 40px
-	&.gallery_mb0
+	&.gl_mb0
 		margin-bottom: 0
-	.gallery__list
-		font-size: 0
-	.gallery__item
+.gallery
+	font-size: 0
+	.gallery-item
 		position: relative
 		display: inline-block
 		width: 25%
@@ -671,9 +675,12 @@ textarea
 			width: 50%
 		+r(460)
 			width: 100%
+		&:nth-child(n+9)
+			display: none
 		img
 			max-width: 100%
-	.gallery__type
+			height: auto
+	.gallery-type
 		position: absolute
 		top: 0
 		left: 0
@@ -683,7 +690,7 @@ textarea
 		background: rgba(#000,.25) 
 		font-size: 24px
 		color: #FFF
-		text-transform: uppercase 
+		text-transform: uppercase
 
 .str
 	position: relative
