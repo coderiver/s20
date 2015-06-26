@@ -75,7 +75,7 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 
 .fancybox-overlay { background: rgba(0, 0, 0, 0.5); }
 
-.fancybox-opened .fancybox-skin, .fancybox-skin { box-shadow: 3.5px 3.5px 5px rgba(0, 0, 0, 0.25); border-radius: 0; }
+.fancybox-opened .fancybox-skin, .fancybox-skin { background: #714b9a; box-shadow: 3.5px 3.5px 5px rgba(0, 0, 0, 0.25); border-radius: 0; }
 
 .fancybox-type-inline .fancybox-close { top: 5px; right: 5px; }
 
@@ -90,7 +90,7 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 .fancybox-prev span { left: 15px; background: url('../img/icons-sbfd79d19fb.png') 0 -1783px no-repeat; width: 50px; height: 50px; }
 @media only screen and (max-width: 470px) { .fancybox-prev span { left: 5px; } }
 
-.fancybox-title-inside-wrap { padding: 20px 35px; background: #714b9a; font-size: 18px; color: white; }
+.fancybox-title-inside-wrap { padding: 20px 35px; font-size: 18px; color: white; }
 @media only screen and (max-width: 470px) { .fancybox-title-inside-wrap { padding: 10px; font-size: 14px; } }
 
 .anchor { position: absolute; top: -75px; }
@@ -263,7 +263,8 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 .link-download span { display: inline-block; font-size: 20px; color: white; vertical-align: bottom; }
 .link-download .ico { margin-top: -17px; vertical-align: bottom; }
 
-.gallery { font-size: 0; }
+.gallery { position: relative; margin-bottom: 40px; font-size: 0; }
+.gallery.gallery_mb0 { margin-bottom: 0; }
 .gallery .gallery__item { position: relative; display: inline-block; width: 25%; vertical-align: top; }
 @media only screen and (max-width: 1020px) { .gallery .gallery__item { width: 50%; } }
 @media only screen and (max-width: 460px) { .gallery .gallery__item { width: 100%; } }
@@ -364,7 +365,7 @@ button, input, textarea { font-family: "PF Dib Text Condensed Pro Light", Arial,
 
 .btn-big { display: block; padding: 24px; background: #e32121; font-size: 20px; text-transform: uppercase; color: white; text-decoration: none; text-align: center; }
 
-.form { display: none; width: 300px; padding: 30px; }
+.form { display: none; width: 300px; padding: 30px; background: white; }
 .form .form__result { display: none; }
 
 .field { margin-bottom: 10px; }
